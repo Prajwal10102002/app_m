@@ -6,7 +6,8 @@ const UserController = require('../controllers/user.controller');
 router.post('/auth/signup', UserController.signUp);
 router.post('/auth/login', UserController.login);
 router.post('/auth/logout/:userId', UserController.logout);
-// router.get('/getCouponCode', UserController.getCouponCode); // New route
-// router.post('/bookShow/:userId/:showId', UserController.bookShow); // New route
+router.get('/getCouponCode', UserController.getCouponCode);
+router.post('/bookShow', UserController.bookShow);
+
 
 module.exports = router;
